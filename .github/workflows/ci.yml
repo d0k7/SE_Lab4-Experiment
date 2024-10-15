@@ -17,11 +17,11 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v3
         with:
-          python-version: '3.12'  # or your specified version
+          python-version: '3.12'  # Specify Python version
 
       - name: Install setuptools
         run: |
-          python -m pip install --upgrade pip setuptools
+          python -m pip install --upgrade pip setuptools  # Only install pip and setuptools
 
       - name: Install dependencies
         run: |
