@@ -19,12 +19,12 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v3
       with:
-        python-version: '3.12'  # or use '3.11' if you prefer to avoid the issue
+        python-version: '3.12'  # Change to '3.11' if you want to use Python 3.11
 
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        python -m pip install setuptools==67.8.0  # Install a compatible version of setuptools
+        python -m pip install setuptools==67.8.0  # Keep the compatible version of setuptools
         pip install -r requirements.txt  # Install other dependencies
 
     - name: Run tests
